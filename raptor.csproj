@@ -1,0 +1,162 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>raptor</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net451</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="raptor\HelpForm.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="interpreter">
+      <HintPath>..\..\..\..\Program Files (x86)\RAPTOR\interpreter.dll</HintPath>
+    </Reference>
+    <Reference Include="NClass.Core">
+      <HintPath>..\..\..\..\Program Files (x86)\RAPTOR\NClass.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneratorAda">
+      <HintPath>..\..\..\..\Program Files (x86)\RAPTOR\GeneratorAda.dll</HintPath>
+    </Reference>
+    <Reference Include="dotnetgraph">
+      <HintPath>..\..\..\..\Program Files (x86)\RAPTOR\dotnetgraph.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Ink">
+      <HintPath>..\..\..\..\Program Files (x86)\RAPTOR\Microsoft.Ink.dll</HintPath>
+    </Reference>
+    <Reference Include="NClass.GUI.Diagram">
+      <HintPath>..\..\..\..\Program Files (x86)\RAPTOR\NClass.GUI.Diagram.dll</HintPath>
+    </Reference>
+    <Reference Include="NClass">
+      <HintPath>..\..\..\..\Program Files (x86)\RAPTOR\NClass.exe</HintPath>
+    </Reference>
+    <Reference Include="Plugins_PlaySound">
+      <HintPath>..\..\..\..\Program Files (x86)\RAPTOR\Plugins_PlaySound.dll</HintPath>
+    </Reference>
+    <Reference Include="NClass.Translations">
+      <HintPath>..\..\..\..\Program Files (x86)\RAPTOR\NClass.Translations.dll</HintPath>
+    </Reference>
+    <Reference Include="NClass.CSharp">
+      <HintPath>..\..\..\..\Program Files (x86)\RAPTOR\NClass.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="NClass.Java">
+      <HintPath>..\..\..\..\Program Files (x86)\RAPTOR\NClass.Java.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="raptor\HelpForm.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="raptor.Assignment_Dlg.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>raptor.Assignment_Dlg.resx</DependentUpon>
+    </Compile>
+    <Compile Update="raptor.Call_Dialog.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>raptor.Call_Dialog.resx</DependentUpon>
+    </Compile>
+    <Compile Update="raptor.Comment_Dlg.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>raptor.Comment_Dlg.resx</DependentUpon>
+    </Compile>
+    <Compile Update="raptor.Control_Dlg.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>raptor.Control_Dlg.resx</DependentUpon>
+    </Compile>
+    <Compile Update="raptor.HelpForm.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>raptor.HelpForm.resx</DependentUpon>
+    </Compile>
+    <Compile Update="raptor.Input_Dlg.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>raptor.Input_Dlg.resx</DependentUpon>
+    </Compile>
+    <Compile Update="raptor.MasterConsole.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>raptor.MasterConsole.resx</DependentUpon>
+    </Compile>
+    <Compile Update="raptor.Output_Dlg.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>raptor.Output_Dlg.resx</DependentUpon>
+    </Compile>
+    <Compile Update="raptor.PromptForm.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>raptor.PromptForm.resx</DependentUpon>
+    </Compile>
+    <Compile Update="raptor.Properties.Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>raptor.Properties.Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="raptor.Visual_Flow_Form.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>raptor.Visual_Flow_Form.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="raptor.Assignment_Dlg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>raptor.Assignment_Dlg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="raptor.Call_Dialog.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>raptor.Call_Dialog.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="raptor.Comment_Dlg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>raptor.Comment_Dlg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="raptor.Control_Dlg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>raptor.Control_Dlg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="raptor.HelpForm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>raptor.HelpForm.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="raptor.Input_Dlg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>raptor.Input_Dlg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="raptor.MasterConsole.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>raptor.MasterConsole.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="raptor.Output_Dlg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>raptor.Output_Dlg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="raptor.PromptForm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>raptor.PromptForm.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="raptor.Properties.Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>raptor.Properties.Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="raptor.Visual_Flow_Form.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>raptor.Visual_Flow_Form.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

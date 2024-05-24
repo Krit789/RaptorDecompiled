@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="FilesBrowser\FilesListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="raptor\Assignment_Dlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\BARTPEFileOpenList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\BARTPEFileSaveList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\Buffered.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="raptor\Call_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\ClassTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="raptor\Comment_Dlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\Control_Dlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\EmergencyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\Input_Dlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\MasterConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\Output_Dlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\Procedure_Chart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="raptor\Procedure_name.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\PromptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\Return_Dlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\Subchart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="raptor\Subchart_name.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\SubmitServerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="raptor\UMLDiagram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="raptor\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="raptor\Visual_Flow_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
